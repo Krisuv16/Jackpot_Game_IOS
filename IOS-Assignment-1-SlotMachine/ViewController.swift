@@ -1,9 +1,10 @@
-//
-//  ViewController.swift
-//  IOS-Assignment-1-SlotMachine
-//
-//  Created by Krisuv Bohara on 2023-01-22.
-//
+/*
+ File Name: ViewController
+ Author: Krisuv Bohara(301274636), Niraj Nepal(301211100), Sarthak Vasistha(301245284)
+ Date: 2023-02-05
+ Description: Creates the main UI of the Jackpot app
+ Version: 1.0
+ */
 
 import UIKit
 
