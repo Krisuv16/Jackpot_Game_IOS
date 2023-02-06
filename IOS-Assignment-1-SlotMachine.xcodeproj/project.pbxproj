@@ -7,27 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6A653AAC297E076600EBA258 /* sub.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A653AAA297E076600EBA258 /* sub.png */; };
-		6A653AAD297E076600EBA258 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A653AAB297E076600EBA258 /* add.png */; };
+		6A0E10A6297E33DA00EFF390 /* spin.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A0E10A5297E33DA00EFF390 /* spin.png */; };
+		6A0E10A8297E33E900EFF390 /* main.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A0E10A7297E33E900EFF390 /* main.png */; };
+		6A0E10AA297E33F200EFF390 /* exiqt.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A0E10A9297E33F200EFF390 /* exiqt.png */; };
+		6A0E10AF297E345400EFF390 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A0E10AB297E345400EFF390 /* logo.png */; };
+		6A0E10B0297E345400EFF390 /* reset.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A0E10AC297E345400EFF390 /* reset.png */; };
+		6A0E10B1297E345400EFF390 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A0E10AD297E345400EFF390 /* add.png */; };
+		6A0E10B2297E345400EFF390 /* sub.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A0E10AE297E345400EFF390 /* sub.png */; };
+		6A0E10B4297E345E00EFF390 /* dollar.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A0E10B3297E345E00EFF390 /* dollar.png */; };
 		6ABB02AE297DE57500D6E686 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB02AD297DE57500D6E686 /* AppDelegate.swift */; };
 		6ABB02B0297DE57500D6E686 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB02AF297DE57500D6E686 /* SceneDelegate.swift */; };
 		6ABB02B2297DE57500D6E686 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB02B1297DE57500D6E686 /* ViewController.swift */; };
 		6ABB02B5297DE57500D6E686 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ABB02B3297DE57500D6E686 /* Main.storyboard */; };
 		6ABB02B7297DE57600D6E686 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ABB02B6297DE57600D6E686 /* Assets.xcassets */; };
 		6ABB02BA297DE57600D6E686 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ABB02B8297DE57600D6E686 /* LaunchScreen.storyboard */; };
-		6ABB02C3297DFD6900D6E686 /* exit.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ABB02C1297DFD6900D6E686 /* exit.png */; };
-		6ABB02C4297DFD6900D6E686 /* reset.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ABB02C2297DFD6900D6E686 /* reset.png */; };
-		6ABB02C6297DFDAB00D6E686 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ABB02C5297DFDAB00D6E686 /* logo.png */; };
-		6ABB02C8297DFE7200D6E686 /* jackpot.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ABB02C7297DFE7200D6E686 /* jackpot.png */; };
-		6ABB02D0297DFFEA00D6E686 /* dollar.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ABB02CD297DFFEA00D6E686 /* dollar.png */; };
-		6ABB02D2297E003D00D6E686 /* component.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ABB02D1297E003D00D6E686 /* component.png */; };
-		6ABB02D6297E00ED00D6E686 /* spin-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ABB02D5297E00ED00D6E686 /* spin-2.png */; };
-		6ABB02D8297E011400D6E686 /* rotate.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ABB02D7297E011400D6E686 /* rotate.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6A653AAA297E076600EBA258 /* sub.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sub.png; path = ../../../../Downloads/sub.png; sourceTree = "<group>"; };
-		6A653AAB297E076600EBA258 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = add.png; path = ../../../../Downloads/add.png; sourceTree = "<group>"; };
+		6A0E10A5297E33DA00EFF390 /* spin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spin.png; sourceTree = "<group>"; };
+		6A0E10A7297E33E900EFF390 /* main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main.png; sourceTree = "<group>"; };
+		6A0E10A9297E33F200EFF390 /* exiqt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exiqt.png; sourceTree = "<group>"; };
+		6A0E10AB297E345400EFF390 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		6A0E10AC297E345400EFF390 /* reset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reset.png; sourceTree = "<group>"; };
+		6A0E10AD297E345400EFF390 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
+		6A0E10AE297E345400EFF390 /* sub.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sub.png; sourceTree = "<group>"; };
+		6A0E10B3297E345E00EFF390 /* dollar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dollar.png; sourceTree = "<group>"; };
 		6ABB02AA297DE57500D6E686 /* IOS-Assignment-1-SlotMachine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS-Assignment-1-SlotMachine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ABB02AD297DE57500D6E686 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6ABB02AF297DE57500D6E686 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,14 +40,6 @@
 		6ABB02B6297DE57600D6E686 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6ABB02B9297DE57600D6E686 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6ABB02BB297DE57600D6E686 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6ABB02C1297DFD6900D6E686 /* exit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = exit.png; path = ../../../../Downloads/exit.png; sourceTree = "<group>"; };
-		6ABB02C2297DFD6900D6E686 /* reset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = reset.png; path = ../../../../Downloads/reset.png; sourceTree = "<group>"; };
-		6ABB02C5297DFDAB00D6E686 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = ../../../../Downloads/logo.png; sourceTree = "<group>"; };
-		6ABB02C7297DFE7200D6E686 /* jackpot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = jackpot.png; path = ../../../../Downloads/jackpot.png; sourceTree = "<group>"; };
-		6ABB02CD297DFFEA00D6E686 /* dollar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dollar.png; path = ../../../../Downloads/dollar.png; sourceTree = "<group>"; };
-		6ABB02D1297E003D00D6E686 /* component.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = component.png; path = ../../../../Downloads/component.png; sourceTree = "<group>"; };
-		6ABB02D5297E00ED00D6E686 /* spin-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "spin-2.png"; path = "../../../../Downloads/spin-2.png"; sourceTree = "<group>"; };
-		6ABB02D7297E011400D6E686 /* rotate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rotate.png; path = ../../../../Downloads/rotate.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,20 +73,18 @@
 			isa = PBXGroup;
 			children = (
 				6ABB02AD297DE57500D6E686 /* AppDelegate.swift */,
+				6A0E10A7297E33E900EFF390 /* main.png */,
+				6A0E10AD297E345400EFF390 /* add.png */,
+				6A0E10AB297E345400EFF390 /* logo.png */,
+				6A0E10AC297E345400EFF390 /* reset.png */,
+				6A0E10AE297E345400EFF390 /* sub.png */,
+				6A0E10B3297E345E00EFF390 /* dollar.png */,
+				6A0E10A9297E33F200EFF390 /* exiqt.png */,
 				6ABB02AF297DE57500D6E686 /* SceneDelegate.swift */,
 				6ABB02B1297DE57500D6E686 /* ViewController.swift */,
 				6ABB02B3297DE57500D6E686 /* Main.storyboard */,
-				6ABB02C5297DFDAB00D6E686 /* logo.png */,
-				6ABB02D1297E003D00D6E686 /* component.png */,
-				6ABB02C7297DFE7200D6E686 /* jackpot.png */,
-				6A653AAB297E076600EBA258 /* add.png */,
-				6A653AAA297E076600EBA258 /* sub.png */,
-				6ABB02D7297E011400D6E686 /* rotate.png */,
-				6ABB02D5297E00ED00D6E686 /* spin-2.png */,
-				6ABB02CD297DFFEA00D6E686 /* dollar.png */,
-				6ABB02C1297DFD6900D6E686 /* exit.png */,
-				6ABB02C2297DFD6900D6E686 /* reset.png */,
 				6ABB02B6297DE57600D6E686 /* Assets.xcassets */,
+				6A0E10A5297E33DA00EFF390 /* spin.png */,
 				6ABB02B8297DE57600D6E686 /* LaunchScreen.storyboard */,
 				6ABB02BB297DE57600D6E686 /* Info.plist */,
 			);
@@ -155,19 +149,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A653AAC297E076600EBA258 /* sub.png in Resources */,
+				6A0E10B1297E345400EFF390 /* add.png in Resources */,
 				6ABB02BA297DE57600D6E686 /* LaunchScreen.storyboard in Resources */,
-				6ABB02C4297DFD6900D6E686 /* reset.png in Resources */,
-				6ABB02C6297DFDAB00D6E686 /* logo.png in Resources */,
-				6ABB02C3297DFD6900D6E686 /* exit.png in Resources */,
-				6ABB02D6297E00ED00D6E686 /* spin-2.png in Resources */,
-				6ABB02C8297DFE7200D6E686 /* jackpot.png in Resources */,
-				6ABB02D8297E011400D6E686 /* rotate.png in Resources */,
-				6ABB02D0297DFFEA00D6E686 /* dollar.png in Resources */,
-				6ABB02D2297E003D00D6E686 /* component.png in Resources */,
+				6A0E10AA297E33F200EFF390 /* exiqt.png in Resources */,
+				6A0E10A8297E33E900EFF390 /* main.png in Resources */,
+				6A0E10B2297E345400EFF390 /* sub.png in Resources */,
+				6A0E10A6297E33DA00EFF390 /* spin.png in Resources */,
+				6A0E10AF297E345400EFF390 /* logo.png in Resources */,
 				6ABB02B7297DE57600D6E686 /* Assets.xcassets in Resources */,
+				6A0E10B4297E345E00EFF390 /* dollar.png in Resources */,
 				6ABB02B5297DE57500D6E686 /* Main.storyboard in Resources */,
-				6A653AAD297E076600EBA258 /* add.png in Resources */,
+				6A0E10B0297E345400EFF390 /* reset.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
