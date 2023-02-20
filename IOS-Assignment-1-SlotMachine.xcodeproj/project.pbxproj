@@ -15,6 +15,10 @@
 		6A0E10B1297E345400EFF390 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A0E10AD297E345400EFF390 /* add.png */; };
 		6A0E10B2297E345400EFF390 /* sub.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A0E10AE297E345400EFF390 /* sub.png */; };
 		6A0E10B4297E345E00EFF390 /* dollar.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A0E10B3297E345E00EFF390 /* dollar.png */; };
+		6AAE1C7829A296F9008E7AEA /* PayoutDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6AAE1C7629A296F9008E7AEA /* PayoutDataModel.xcdatamodeld */; };
+		6AAE1C7E29A29B27008E7AEA /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAE1C7D29A29B27008E7AEA /* CustomTableViewCell.swift */; };
+		6AAE1C8929A2A771008E7AEA /* PayoutDatabase+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAE1C8729A2A771008E7AEA /* PayoutDatabase+CoreDataClass.swift */; };
+		6AAE1C8A29A2A771008E7AEA /* PayoutDatabase+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAE1C8829A2A771008E7AEA /* PayoutDatabase+CoreDataProperties.swift */; };
 		6ABB02AE297DE57500D6E686 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB02AD297DE57500D6E686 /* AppDelegate.swift */; };
 		6ABB02B0297DE57500D6E686 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB02AF297DE57500D6E686 /* SceneDelegate.swift */; };
 		6ABB02B2297DE57500D6E686 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB02B1297DE57500D6E686 /* ViewController.swift */; };
@@ -32,6 +36,10 @@
 		6A0E10AD297E345400EFF390 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
 		6A0E10AE297E345400EFF390 /* sub.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sub.png; sourceTree = "<group>"; };
 		6A0E10B3297E345E00EFF390 /* dollar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dollar.png; sourceTree = "<group>"; };
+		6AAE1C7729A296F9008E7AEA /* PayoutDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PayoutDataModel.xcdatamodel; sourceTree = "<group>"; };
+		6AAE1C7D29A29B27008E7AEA /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		6AAE1C8729A2A771008E7AEA /* PayoutDatabase+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PayoutDatabase+CoreDataClass.swift"; sourceTree = "<group>"; };
+		6AAE1C8829A2A771008E7AEA /* PayoutDatabase+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PayoutDatabase+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		6ABB02AA297DE57500D6E686 /* IOS-Assignment-1-SlotMachine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS-Assignment-1-SlotMachine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ABB02AD297DE57500D6E686 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6ABB02AF297DE57500D6E686 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +64,9 @@
 		6ABB02A1297DE57500D6E686 = {
 			isa = PBXGroup;
 			children = (
+				6AAE1C8729A2A771008E7AEA /* PayoutDatabase+CoreDataClass.swift */,
+				6AAE1C8829A2A771008E7AEA /* PayoutDatabase+CoreDataProperties.swift */,
+				6AAE1C7629A296F9008E7AEA /* PayoutDataModel.xcdatamodeld */,
 				6ABB02AC297DE57500D6E686 /* IOS-Assignment-1-SlotMachine */,
 				6ABB02AB297DE57500D6E686 /* Products */,
 			);
@@ -82,6 +93,7 @@
 				6A0E10A9297E33F200EFF390 /* exiqt.png */,
 				6ABB02AF297DE57500D6E686 /* SceneDelegate.swift */,
 				6ABB02B1297DE57500D6E686 /* ViewController.swift */,
+				6AAE1C7D29A29B27008E7AEA /* CustomTableViewCell.swift */,
 				6ABB02B3297DE57500D6E686 /* Main.storyboard */,
 				6ABB02B6297DE57600D6E686 /* Assets.xcassets */,
 				6A0E10A5297E33DA00EFF390 /* spin.png */,
@@ -170,8 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AAE1C8929A2A771008E7AEA /* PayoutDatabase+CoreDataClass.swift in Sources */,
 				6ABB02B2297DE57500D6E686 /* ViewController.swift in Sources */,
+				6AAE1C7829A296F9008E7AEA /* PayoutDataModel.xcdatamodeld in Sources */,
+				6AAE1C7E29A29B27008E7AEA /* CustomTableViewCell.swift in Sources */,
 				6ABB02AE297DE57500D6E686 /* AppDelegate.swift in Sources */,
+				6AAE1C8A29A2A771008E7AEA /* PayoutDatabase+CoreDataProperties.swift in Sources */,
 				6ABB02B0297DE57500D6E686 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,6 +404,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6AAE1C7629A296F9008E7AEA /* PayoutDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6AAE1C7729A296F9008E7AEA /* PayoutDataModel.xcdatamodel */,
+			);
+			currentVersion = 6AAE1C7729A296F9008E7AEA /* PayoutDataModel.xcdatamodel */;
+			path = PayoutDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6ABB02A2297DE57500D6E686 /* Project object */;
 }

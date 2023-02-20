@@ -7,9 +7,12 @@
  */
 
 import UIKit
+import CoreData
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var tableView: UITableView!
+    
     @IBOutlet weak var resetBt: UIButton!
     @IBOutlet weak var exitBtn: UIButton!
     @IBOutlet weak var backView: UIView!
@@ -44,14 +47,79 @@ class ViewController: UIViewController {
         "image 25",
     ]
     
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    var models = [PayoutDatabase]()
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        notificationPermission()
+
         backView.layer.cornerRadius = 12
         resetBt.layer.cornerRadius = resetBt.bounds.width / 2
         resetBt.clipsToBounds = true
         exitBtn.clipsToBounds = true
         exitBtn.layer.cornerRadius = exitBtn.bounds.width / 2
+        
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.separatorInset = tableView.layoutMargins
+        
+        fetchPayouts()
         generateRandomImages()
+    }
+    
+    func notificationPermission(){
+        let center = UNUserNotificationCenter.current()
+        center.getNotificationSettings {settings in
+            switch settings.authorizationStatus {
+            case .authorized:
+                print("DOne")
+            case .denied:
+                return
+            case .notDetermined:
+                center.requestAuthorization { didAllow, error in
+  
+                    if(didAllow){
+                        print("Done")
+                    }
+                }
+            default:
+                return
+            }
+        }
+    }
+    
+    func fetchPayouts(){
+        
+        //Fetching data from CoreData and isplaying in the Table View
+        do{
+           models =  try context.fetch(PayoutDatabase.fetchRequest())
+            //sorting the data on highest money earned
+            models.sort { $0.pay > $1.pay }
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+            
+        }catch{
+            
+        }
+    }
+    
+    func uploadData(date: String, payout: String, pay: Int){
+        let newItem = PayoutDatabase(context: context)
+        newItem.payout = payout
+        newItem.date = date
+        newItem.pay = Int16(pay)
+        
+        do{
+            try context.save()
+            fetchPayouts()
+        }
+        catch{
+            
+        }
+        
     }
     
     //this function is responsible for generating random images in the main jackpotfield !!
@@ -86,16 +154,29 @@ class ViewController: UIViewController {
     }
     
     func onJackPot(){
+        let date = Date()
         let totalMoneySplit = totalMoneyLabel.text?.components(separatedBy: " ")
         let bet : Int = Int(betCount.text!)!
         let totalMoney : Int = Int(totalMoneySplit![0])!
         
         if imageTwo.image == UIImage(named: "image 25") && imageFive.image == UIImage(named: "image 25") && imageEight.image == UIImage(named: "image 25"){
-            let newTotal = totalMoney + (bet * 2)
+            
+            let newTotal = totalMoney + (bet * 3)
             totalMoneyLabel.text = String(newTotal) + " $"
+            
             addBorders()
             msgLabel.text = "WOW, You have won the Jackpot !!"
             msgLabel.textColor = UIColor.systemYellow
+            
+            let formatter3 = DateFormatter()
+            formatter3.dateFormat = "MMM d"
+            
+            formatter3.string(from: date)
+            
+            uploadData(date:  formatter3.string(from: date),
+                       payout: String(newTotal) + " $", pay: newTotal)
+            pushNotification(money: newTotal)
+            
         }else{
             let newTotal = totalMoney - bet
             totalMoneyLabel.text = String(newTotal) + " $"
@@ -112,7 +193,6 @@ class ViewController: UIViewController {
             clear()
             generateRandomImages()
             onJackPot()
-            
         }
     }
     
@@ -148,10 +228,46 @@ class ViewController: UIViewController {
         }
     }
     
+    
     @IBAction func resetBtn(_ sender: UIButton) {
         clear()
         betCount.text = "0"
         totalMoneyLabel.text = "1000 $"
+            }
+    
+    func pushNotification(money : Int) {
+        
+        let userNotificationCenter = UNUserNotificationCenter.current()
+        let notificationContent = UNMutableNotificationContent()
+        notificationContent.title = "Congratulations"
+        notificationContent.body = "JackPot your new total amount is \(money) $"
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1,
+                                                        repeats: false)
+        
+        let request = UNNotificationRequest(identifier: "jackpot",
+                                            content: notificationContent,
+                                            trigger: trigger)
+        
+        userNotificationCenter.add(request) { (error) in
+            if let error = error {
+                print("Notification Error: ", error)
+            }
+        }
     }
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return models.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let model = models[indexPath.row]
+        let cells = tableView.dequeueReusableCell(withIdentifier: "cells", for: indexPath) as! CustomTableViewCell
+        cells.dateLabel.text = model.date
+        cells.payoutLabel.text = model.payout
+        return cells
+    }
+    
 }
 
